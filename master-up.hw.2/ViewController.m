@@ -19,8 +19,8 @@
 @implementation ViewController
 
 - (IBAction)actionLogin:(UIButton *)sender {
-    NSLog(@"Login button has presssed");
-    NSLog(@"login:password - %@:%@", self.txtLogin.text, self.txtPassword.text);
+    //NSLog(@"Login button has presssed");
+    //NSLog(@"login:password - %@:%@", self.txtLogin.text, self.txtPassword.text);
     
     User* user = [User userWithName:self.txtLogin.text andPassword:self.txtPassword.text];
     [user login];
