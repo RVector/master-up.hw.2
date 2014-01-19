@@ -22,6 +22,9 @@
 		CB9A773D188C5A4800D055B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB9A773B188C5A4800D055B4 /* InfoPlist.strings */; };
 		CB9A773F188C5A4800D055B4 /* master_up_hw_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9A773E188C5A4800D055B4 /* master_up_hw_2Tests.m */; };
 		CB9A774B188C5C6500D055B4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9A774A188C5C6500D055B4 /* User.m */; };
+		CBA1B65D188C64A5008C046B /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B65C188C64A5008C046B /* Route.m */; };
+		CBA1B660188C650C008C046B /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B65F188C650C008C046B /* Vehicle.m */; };
+		CBA1B663188C6560008C046B /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B662188C6560008C046B /* Bus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		CB9A773E188C5A4800D055B4 /* master_up_hw_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = master_up_hw_2Tests.m; sourceTree = "<group>"; };
 		CB9A7749188C5C6500D055B4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		CB9A774A188C5C6500D055B4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		CBA1B65B188C64A5008C046B /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		CBA1B65C188C64A5008C046B /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		CBA1B65E188C650C008C046B /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		CBA1B65F188C650C008C046B /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		CBA1B661188C6560008C046B /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
+		CBA1B662188C6560008C046B /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +124,7 @@
 		CB9A7719188C5A4800D055B4 /* master-up.hw.2 */ = {
 			isa = PBXGroup;
 			children = (
-				CB9A7748188C5C5000D055B4 /* User */,
+				CB9A7748188C5C5000D055B4 /* Model */,
 				CB9A7722188C5A4800D055B4 /* AppDelegate.h */,
 				CB9A7723188C5A4800D055B4 /* AppDelegate.m */,
 				CB9A7725188C5A4800D055B4 /* Main.storyboard */,
@@ -156,13 +165,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CB9A7748188C5C5000D055B4 /* User */ = {
+		CB9A7748188C5C5000D055B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CB9A7749188C5C6500D055B4 /* User.h */,
 				CB9A774A188C5C6500D055B4 /* User.m */,
+				CBA1B65B188C64A5008C046B /* Route.h */,
+				CBA1B65C188C64A5008C046B /* Route.m */,
+				CBA1B65E188C650C008C046B /* Vehicle.h */,
+				CBA1B65F188C650C008C046B /* Vehicle.m */,
+				CBA1B661188C6560008C046B /* Bus.h */,
+				CBA1B662188C6560008C046B /* Bus.m */,
 			);
-			name = User;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA1B65D188C64A5008C046B /* Route.m in Sources */,
 				CB9A774B188C5C6500D055B4 /* User.m in Sources */,
+				CBA1B660188C650C008C046B /* Vehicle.m in Sources */,
 				CB9A772A188C5A4800D055B4 /* ViewController.m in Sources */,
 				CB9A7724188C5A4800D055B4 /* AppDelegate.m in Sources */,
+				CBA1B663188C6560008C046B /* Bus.m in Sources */,
 				CB9A7720188C5A4800D055B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +492,7 @@
 				CB9A7744188C5A4800D055B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB9A7745188C5A4800D055B4 /* Build configuration list for PBXNativeTarget "master-up.hw.2Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +501,7 @@
 				CB9A7747188C5A4800D055B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
