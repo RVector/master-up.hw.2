@@ -21,6 +21,7 @@
 		CB9A7735188C5A4800D055B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9A7717188C5A4800D055B4 /* UIKit.framework */; };
 		CB9A773D188C5A4800D055B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB9A773B188C5A4800D055B4 /* InfoPlist.strings */; };
 		CB9A773F188C5A4800D055B4 /* master_up_hw_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9A773E188C5A4800D055B4 /* master_up_hw_2Tests.m */; };
+		CB9A774B188C5C6500D055B4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9A774A188C5C6500D055B4 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		CB9A773A188C5A4800D055B4 /* master-up.hw.2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "master-up.hw.2Tests-Info.plist"; sourceTree = "<group>"; };
 		CB9A773C188C5A4800D055B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB9A773E188C5A4800D055B4 /* master_up_hw_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = master_up_hw_2Tests.m; sourceTree = "<group>"; };
+		CB9A7749188C5C6500D055B4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		CB9A774A188C5C6500D055B4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		CB9A7719188C5A4800D055B4 /* master-up.hw.2 */ = {
 			isa = PBXGroup;
 			children = (
+				CB9A7748188C5C5000D055B4 /* User */,
 				CB9A7722188C5A4800D055B4 /* AppDelegate.h */,
 				CB9A7723188C5A4800D055B4 /* AppDelegate.m */,
 				CB9A7725188C5A4800D055B4 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				CB9A773B188C5A4800D055B4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB9A7748188C5C5000D055B4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CB9A7749188C5C6500D055B4 /* User.h */,
+				CB9A774A188C5C6500D055B4 /* User.m */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9A774B188C5C6500D055B4 /* User.m in Sources */,
 				CB9A772A188C5A4800D055B4 /* ViewController.m in Sources */,
 				CB9A7724188C5A4800D055B4 /* AppDelegate.m in Sources */,
 				CB9A7720188C5A4800D055B4 /* main.m in Sources */,
