@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="-65" y="-375"/>
         </scene>
-        <!--View Controller - Регистрация-->
+        <!--View Controller - Registration-->
         <scene sceneID="fq5-2h-ewa">
             <objects>
-                <viewController title="Регистрация" id="XoJ-rH-Cdn" sceneMemberID="viewController">
+                <viewController title="Registration" id="XoJ-rH-Cdn" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xXE-O4-GYW"/>
                         <viewControllerLayoutGuide type="bottom" id="KB3-Qh-BCG"/>
@@ -107,7 +107,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RXx-rq-RXM"/>
+                    <navigationItem key="navigationItem" title="Регистрация" id="RXx-rq-RXM">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="cxl-Yk-ZgN"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rOT-ZW-az5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,16 +128,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="b8a-Zj-th2"/>
+                    <navigationItem key="navigationItem" title="Восстановление пароля" id="b8a-Zj-th2">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="c0B-dl-A2Z"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2e4-kB-yVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382" y="356"/>
         </scene>
-        <!--View Controller - MapController-->
+        <!--View Controller - Map-->
         <scene sceneID="HIh-8d-dl6">
             <objects>
-                <viewController title="MapController" id="5ev-yj-Zms" sceneMemberID="viewController">
+                <viewController title="Map" id="5ev-yj-Zms" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Kf-M9-v0I"/>
                         <viewControllerLayoutGuide type="bottom" id="Yw4-Bo-G3J"/>
@@ -143,11 +147,29 @@
                     <view key="view" contentMode="scaleToFill" id="6qh-Xg-Lo5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-5k-UX1">
+                                <rect key="frame" x="0.0" y="35" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.70102439551480988" green="1" blue="0.58597580511356373" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="a7v-B5-iSe" appends="YES" id="oWa-wg-ZB3"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Bke-qQ-iIh"/>
+                    <navigationItem key="navigationItem" title="Карта города" id="Bke-qQ-iIh">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="6bM-Jj-CCR"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aY-fv-80t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="a7v-B5-iSe">
+                    <connections>
+                        <outlet property="delegate" destination="ch9-5k-UX1" id="C1L-iL-UM8"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="695" y="-374"/>
         </scene>
