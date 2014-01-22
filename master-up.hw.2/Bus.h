@@ -10,7 +10,7 @@
 
 @interface Bus : Vehicle
 
-@property float longtitude;
-@property float latitude;
+@property (nonatomic) float longtitude;
+@property (nonatomic) float latitude;
 
 @end

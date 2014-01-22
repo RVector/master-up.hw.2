@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Klb-7L-RcM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Jjp-7V-ADQ">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Klb-7L-RcM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yq3-mv-C7H">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="37U-Sg-0eC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTZ-4d-21n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495" y="-374"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -31,6 +46,7 @@
                                 </state>
                                 <connections>
                                     <action selector="actionLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kMV-6R-7zv"/>
+                                    <segue destination="5ev-yj-Zms" kind="push" id="IOQ-h2-Ioe"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aWS-Yw-5DN">
@@ -45,9 +61,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch0-Q2-92f">
+                                <rect key="frame" x="114" y="239" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Регистрация">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XoJ-rH-Cdn" kind="push" id="JeT-6r-Uyy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szC-MY-rYu">
+                                <rect key="frame" x="101" y="269" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Хочу вспомнить!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="upB-Xt-Uwu" kind="push" id="IfP-T5-JTz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SQb-uy-2YN"/>
                     <connections>
                         <outlet property="txtLogin" destination="ugu-tr-CY2" id="Nad-ce-lzq"/>
                         <outlet property="txtPassword" destination="aWS-Yw-5DN" id="iYE-Bf-UJx"/>
@@ -55,6 +92,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-65" y="-375"/>
+        </scene>
+        <!--View Controller - Регистрация-->
+        <scene sceneID="fq5-2h-ewa">
+            <objects>
+                <viewController title="Регистрация" id="XoJ-rH-Cdn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xXE-O4-GYW"/>
+                        <viewControllerLayoutGuide type="bottom" id="KB3-Qh-BCG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NZS-se-kQm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RXx-rq-RXM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOT-ZW-az5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="356"/>
+        </scene>
+        <!--View Controller - Reset-->
+        <scene sceneID="Ga6-4O-AK9">
+            <objects>
+                <viewController title="Reset" id="upB-Xt-Uwu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HCW-hz-GTM"/>
+                        <viewControllerLayoutGuide type="bottom" id="306-2L-Eet"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ckz-AC-2kp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b8a-Zj-th2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2e4-kB-yVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="356"/>
+        </scene>
+        <!--View Controller - MapController-->
+        <scene sceneID="HIh-8d-dl6">
+            <objects>
+                <viewController title="MapController" id="5ev-yj-Zms" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Kf-M9-v0I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yw4-Bo-G3J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6qh-Xg-Lo5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bke-qQ-iIh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0aY-fv-80t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="-374"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -13,7 +13,9 @@
 @property (strong, nonatomic) NSString* userName;
 @property (strong, nonatomic) NSString* userPassword;
 
-+(User*)userWithName:(NSString*)name andPassword:(NSString*)password;
+//+(User*)userWithName:(NSString*)name andPassword:(NSString*)password;
+
++(instancetype)userWithName:(NSString*)name andPassword:(NSString*)password;
 -(void)login;
 
 @end
