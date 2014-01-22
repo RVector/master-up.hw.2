@@ -136,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="382" y="356"/>
         </scene>
-        <!--View Controller - Map-->
+        <!--Map View Controller - Map-->
         <scene sceneID="HIh-8d-dl6">
             <objects>
-                <viewController title="Map" id="5ev-yj-Zms" sceneMemberID="viewController">
+                <viewController title="Map" id="5ev-yj-Zms" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Kf-M9-v0I"/>
                         <viewControllerLayoutGuide type="bottom" id="Yw4-Bo-G3J"/>
@@ -148,13 +148,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-5k-UX1">
-                                <rect key="frame" x="0.0" y="35" width="320" height="568"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-5k-UX1">
+                                <rect key="frame" x="0.0" y="5" width="320" height="534"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.70102439551480988" green="1" blue="0.58597580511356373" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="a7v-B5-iSe" appends="YES" id="oWa-wg-ZB3"/>
+                                    <outletCollection property="gestureRecognizers" destination="1bZ-AN-taZ" appends="YES" id="2rT-YZ-YeB"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -165,15 +164,18 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aY-fv-80t" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="a7v-B5-iSe">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="1bZ-AN-taZ">
                     <connections>
-                        <outlet property="delegate" destination="ch9-5k-UX1" id="C1L-iL-UM8"/>
+                        <action selector="longRecognized:" destination="5ev-yj-Zms" id="doo-z9-q53"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="695" y="-374"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map.jpg" width="1074" height="818"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

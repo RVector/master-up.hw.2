@@ -25,6 +25,8 @@
 		CBA1B65D188C64A5008C046B /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B65C188C64A5008C046B /* Route.m */; };
 		CBA1B660188C650C008C046B /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B65F188C650C008C046B /* Vehicle.m */; };
 		CBA1B663188C6560008C046B /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B662188C6560008C046B /* Bus.m */; };
+		CBA1B666189055A0008C046B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B665189055A0008C046B /* MapViewController.m */; };
+		CBA1B66818905FE8008C046B /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBA1B66718905FE8008C046B /* map.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		CBA1B65F188C650C008C046B /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		CBA1B661188C6560008C046B /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
 		CBA1B662188C6560008C046B /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
+		CBA1B664189055A0008C046B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		CBA1B665189055A0008C046B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		CBA1B66718905FE8008C046B /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = map.jpg; path = ../../../Dropbox/map.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,12 +129,15 @@
 		CB9A7719188C5A4800D055B4 /* master-up.hw.2 */ = {
 			isa = PBXGroup;
 			children = (
+				CBA1B66918905FF3008C046B /* Img */,
 				CB9A7748188C5C5000D055B4 /* Model */,
 				CB9A7722188C5A4800D055B4 /* AppDelegate.h */,
 				CB9A7723188C5A4800D055B4 /* AppDelegate.m */,
 				CB9A7725188C5A4800D055B4 /* Main.storyboard */,
 				CB9A7728188C5A4800D055B4 /* ViewController.h */,
 				CB9A7729188C5A4800D055B4 /* ViewController.m */,
+				CBA1B664189055A0008C046B /* MapViewController.h */,
+				CBA1B665189055A0008C046B /* MapViewController.m */,
 				CB9A772B188C5A4800D055B4 /* Images.xcassets */,
 				CB9A771A188C5A4800D055B4 /* Supporting Files */,
 			);
@@ -178,6 +186,14 @@
 				CBA1B662188C6560008C046B /* Bus.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		CBA1B66918905FF3008C046B /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				CBA1B66718905FE8008C046B /* map.jpg */,
+			);
+			name = Img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA1B66818905FE8008C046B /* map.jpg in Resources */,
 				CB9A772C188C5A4800D055B4 /* Images.xcassets in Resources */,
 				CB9A771E188C5A4800D055B4 /* InfoPlist.strings in Resources */,
 				CB9A7727188C5A4800D055B4 /* Main.storyboard in Resources */,
@@ -280,6 +297,7 @@
 				CBA1B65D188C64A5008C046B /* Route.m in Sources */,
 				CB9A774B188C5C6500D055B4 /* User.m in Sources */,
 				CBA1B660188C650C008C046B /* Vehicle.m in Sources */,
+				CBA1B666189055A0008C046B /* MapViewController.m in Sources */,
 				CB9A772A188C5A4800D055B4 /* ViewController.m in Sources */,
 				CB9A7724188C5A4800D055B4 /* AppDelegate.m in Sources */,
 				CBA1B663188C6560008C046B /* Bus.m in Sources */,
