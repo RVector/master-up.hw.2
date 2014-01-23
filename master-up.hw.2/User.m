@@ -10,7 +10,7 @@
 
 @implementation User
 
-+(User *)userWithName:(NSString *)name andPassword:(NSString *)password{
++(instancetype)userWithName:(NSString *)name andPassword:(NSString *)password{
     User* user = [[User alloc] init];
     
     user.userName     = name;
