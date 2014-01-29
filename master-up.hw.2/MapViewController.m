@@ -7,6 +7,8 @@
 //
 
 #import "MapViewController.h"
+#import "ViewController.h"
+#import "Route.h"
 
 @interface MapViewController ()
 
@@ -19,6 +21,10 @@
     if ([sender state] == UIGestureRecognizerStateBegan) {
         NSLog(@"Long Press began");
     }
+}
+
+-(void)selectRoute:(Route *)selectedRoute {
+    self.routeTitle.text = selectedRoute.title;
 }
 
 - (void)viewDidLoad

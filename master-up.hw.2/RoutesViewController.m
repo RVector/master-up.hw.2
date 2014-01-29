@@ -8,8 +8,11 @@
 
 #import "RoutesViewController.h"
 #import "MapViewController.h"
+#import "Route.h"
 
 @interface RoutesViewController ()
+
+@property (strong, nonatomic) NSArray* routes;
 
 @end
 
@@ -69,9 +72,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //Route* route = (Route*)self.routes[indexPath.row];
+    Route* route = (Route*)self.routes[indexPath.row];
     
-    //[self.mapController selectRoute:route];
+    [self.mapController selectRoute:route];
     JASidePanelController* sideController = self.sidePanelController;
     
     [sideController showCenterPanelAnimated:YES];

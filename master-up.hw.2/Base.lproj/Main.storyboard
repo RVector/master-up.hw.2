@@ -77,7 +77,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="upB-Xt-Uwu" kind="push" id="IfP-T5-JTz"/>
+                                    <segue destination="upB-Xt-Uwu" kind="push" id="wXk-2e-5OV"/>
                                 </connections>
                             </button>
                         </subviews>

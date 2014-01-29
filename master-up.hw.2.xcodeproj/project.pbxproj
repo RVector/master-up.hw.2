@@ -79,6 +79,7 @@
 		CBF95359189982F200ACDC32 /* SidePanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidePanelViewController.m; sourceTree = "<group>"; };
 		CBF9535D18998BA800ACDC32 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
 		CBF9535E18998BA800ACDC32 /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutesViewController.m; sourceTree = "<group>"; };
+		CBF953601899A2E400ACDC32 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +201,7 @@
 				CBA1B65F188C650C008C046B /* Vehicle.m */,
 				CBA1B661188C6560008C046B /* Bus.h */,
 				CBA1B662188C6560008C046B /* Bus.m */,
+				CBF953601899A2E400ACDC32 /* Define.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
