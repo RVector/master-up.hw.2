@@ -27,9 +27,9 @@
 		CBA1B660188C650C008C046B /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B65F188C650C008C046B /* Vehicle.m */; };
 		CBA1B663188C6560008C046B /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B662188C6560008C046B /* Bus.m */; };
 		CBA1B666189055A0008C046B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1B665189055A0008C046B /* MapViewController.m */; };
-		CBA1B66818905FE8008C046B /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBA1B66718905FE8008C046B /* map.jpg */; };
 		CBF9535B189982F200ACDC32 /* SidePanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF95359189982F200ACDC32 /* SidePanelViewController.m */; };
 		CBF9535F18998BA800ACDC32 /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF9535E18998BA800ACDC32 /* RoutesViewController.m */; };
+		CBF953621899AB1800ACDC32 /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF953611899AB1800ACDC32 /* map.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +74,12 @@
 		CBA1B662188C6560008C046B /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
 		CBA1B664189055A0008C046B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		CBA1B665189055A0008C046B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		CBA1B66718905FE8008C046B /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = map.jpg; path = ../../../Dropbox/map.jpg; sourceTree = "<group>"; };
 		CBF95358189982F200ACDC32 /* SidePanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidePanelViewController.h; sourceTree = "<group>"; };
 		CBF95359189982F200ACDC32 /* SidePanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidePanelViewController.m; sourceTree = "<group>"; };
 		CBF9535D18998BA800ACDC32 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
 		CBF9535E18998BA800ACDC32 /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutesViewController.m; sourceTree = "<group>"; };
 		CBF953601899A2E400ACDC32 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		CBF953611899AB1800ACDC32 /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +209,7 @@
 		CBA1B66918905FF3008C046B /* Img */ = {
 			isa = PBXGroup;
 			children = (
-				CBA1B66718905FE8008C046B /* map.jpg */,
+				CBF953611899AB1800ACDC32 /* map.jpg */,
 			);
 			name = Img;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA1B66818905FE8008C046B /* map.jpg in Resources */,
+				CBF953621899AB1800ACDC32 /* map.jpg in Resources */,
 				CB9A772C188C5A4800D055B4 /* Images.xcassets in Resources */,
 				CB9A771E188C5A4800D055B4 /* InfoPlist.strings in Resources */,
 				CB9A7727188C5A4800D055B4 /* Main.storyboard in Resources */,
