@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="-925" y="397"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Routes View Controller-->
         <scene sceneID="Sed-2y-Wnw">
             <objects>
-                <tableViewController storyboardIdentifier="leftViewController" id="J0v-iN-PyQ" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="leftViewController" id="J0v-iN-PyQ" customClass="RoutesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="g62-7Q-Mxo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
