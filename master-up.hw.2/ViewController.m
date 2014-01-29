@@ -19,8 +19,7 @@
 @implementation ViewController
 
 - (IBAction)actionLogin:(UIButton *)sender {
-    //NSLog(@"Login button has presssed");
-    //NSLog(@"login:password - %@:%@", self.txtLogin.text, self.txtPassword.text);
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     User* user = [User userWithName:self.txtLogin.text andPassword:self.txtPassword.text];
     [user login];
@@ -29,7 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.navigationController.navigationBarHidden = YES;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

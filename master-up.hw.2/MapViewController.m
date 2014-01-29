@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 
 @interface MapViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *routeTitle;
 
 @end
 
@@ -22,7 +23,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    UIViewController* loginController = [self.storyboard instantiateViewControllerWithIdentifier:@"AuthNavigationController"];
+    
+    [self.navigationController presentViewController:loginController animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
