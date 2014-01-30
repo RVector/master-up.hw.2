@@ -24,7 +24,7 @@
 }
 
 -(void)selectRoute:(Route *)selectedRoute {
-    self.routeTitle.text = selectedRoute.title;
+    //self.routeTitle.text = selectedRoute.title;
 }
 
 - (void)viewDidLoad
@@ -34,7 +34,19 @@
     UIViewController* loginController = [self.storyboard instantiateViewControllerWithIdentifier:@"AuthNavigationController"];
     
     [self.navigationController presentViewController:loginController animated:NO completion:nil];
+    
+    //Notification
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didGetMyNotification:)
+                                                 name:@"SetRouteNotification"
+                                               object:nil];
 }
+
+- (void)didGetMyNotification:(NSNotification*)notification
+{
+    NSLog(@"notification=%@",[[notification object] title]);
+    self.routeTitle.text = [[notification object] title];
+};
 
 - (void)didReceiveMemoryWarning
 {

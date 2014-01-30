@@ -87,8 +87,10 @@
     
     NSLog(@"%@", route.title);
     
-    [self.mapController selectRoute:route];
+    //[self.mapController selectRoute:route];
     JASidePanelController* sideController = self.sidePanelController;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"SetRouteNotification" object:route];
     
     [sideController showCenterPanelAnimated:YES];
 }

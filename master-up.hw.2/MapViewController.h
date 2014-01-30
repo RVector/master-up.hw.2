@@ -10,5 +10,6 @@
 @class Route;
 
 @interface MapViewController : UIViewController
-- (void)selectRoute:(Route *)selectedRoute;
+-(void)selectRoute:(Route *)selectedRoute;
+-(void)didGetMyNotification;
 @end
