@@ -9,6 +9,9 @@
 #import "RoutesViewController.h"
 #import "MapViewController.h"
 #import "Route.h"
+#import "API.h"
+
+#import <MBProgressHUD.h>
 
 @interface RoutesViewController ()
 
@@ -30,6 +33,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[API sharedClient] getRoutes:^(NSArray *routes, NSError *error) {
+        self.routes = routes;
+        [self.tableView reloadData];
+    } params:nil];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,20 +54,33 @@
 
 #pragma mark - Table view data source
 
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
-
+*/
+ 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.routes.count;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    Route* route = (Route*)self.routes[indexPath.row];
+    cell.textLabel.text = route.title;
+    
+    return cell;
+}
+
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -69,10 +90,13 @@
     
     return cell;
 }
+*/
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     Route* route = (Route*)self.routes[indexPath.row];
+    
+    NSLog(@"%@", route.title);
     
     [self.mapController selectRoute:route];
     JASidePanelController* sideController = self.sidePanelController;
